@@ -1,7 +1,7 @@
 {
-  "name": "@unction/{{FQNAME}}",
+  "name": "@unction/groupby",
   "version": "1.0.0",
-  "description": "",
+  "description": "Creates a record tree where the key is a computation on the value and the value is a list of the values that match with that computation",
   "keywords": [
     "unction",
     "functional"
@@ -14,9 +14,9 @@
     }
   ],
   "license": "ISC",
-  "homepage": "https://github.com/unctionjs/{{NAME}}#readme",
-  "repository": "github:unctionjs/{{NAME}}",
-  "bugs": "https://github.com/unctionjs/{{NAME}}/issues",
+  "homepage": "https://github.com/unctionjs/groupBy#readme",
+  "repository": "github:unctionjs/groupBy",
+  "bugs": "https://github.com/unctionjs/groupBy/issues",
   "main": "transpiled/index.js",
   "files": [
     "transpiled/index.js"
@@ -38,6 +38,7 @@
     "watch": "chokidar './index.js' './test.js' --command 'npm run ci --silent'"
   },
   "devDependencies": {
+    "@unction/key": "4.12.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-eslint": "8.0.0",
@@ -58,5 +59,11 @@
     "nyc": "11.2.1",
     "tap": "10.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@unction/first": "1.8.0",
+    "@unction/fresh": "3.11.0",
+    "@unction/mergeright": "3.36.2",
+    "@unction/of": "1.0.0",
+    "@unction/reducevalues": "2.44.0"
+  }
 }

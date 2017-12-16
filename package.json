@@ -1,6 +1,6 @@
 {
   "name": "@unction/groupby",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Creates a record tree where the key is a computation on the value and the value is a list of the values that match with that computation",
   "keywords": [
     "unction",

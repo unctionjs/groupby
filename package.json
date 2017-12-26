@@ -62,10 +62,10 @@
     "tap": "11.0.0"
   },
   "dependencies": {
-    "@unction/first": "1.8.0",
+    "@unction/first": "2.0.0",
     "@unction/fresh": "5.0.0",
     "@unction/mergeright": "4.0.0",
     "@unction/of": "2.0.0",
-    "@unction/reducevalues": "2.44.0"
+    "@unction/reducevalues": "3.0.0"
   }
 }

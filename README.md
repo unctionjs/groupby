@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (RecordType -> KeyType) -> ListType<RecordType> -> RecordType<ListType<RecordType>>
+> (RecordType => KeyType) => ListType<RecordType> => RecordType<ListType<RecordType>>
 
 Creates a record tree where the key is a computation on the value and the value is a list of the values that match with that computation.
 

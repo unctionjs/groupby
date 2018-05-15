@@ -38,7 +38,6 @@
     "watch": "chokidar './index.js' './test.js' --command 'npm run ci --silent'"
   },
   "devDependencies": {
-    "@unction/key": "4.12.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-eslint": "8.0.3",
@@ -62,6 +61,7 @@
     "tap": "11.0.0"
   },
   "dependencies": {
+    "@unction/key": "4.12.0",
     "@unction/first": "2.0.0",
     "@unction/fresh": "6.0.0",
     "@unction/mergeright": "5.0.0",

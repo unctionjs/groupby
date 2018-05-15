@@ -16,14 +16,14 @@ test("Single Object Array", ({same, end}) => {
         },
       ]
     ),
-    {
-      sandwich: [
+    new Map([
+      ["sandwich", [
         {
           name: "Hotdog",
           category: "sandwich",
         },
-      ],
-    }
+      ]],
+    ])
   )
 
   end()
@@ -45,8 +45,8 @@ test("Multiple Object Array", ({same, end}) => {
         },
       ]
     ),
-    {
-      sandwich: [
+    new Map([
+      ["sandwich", [
         {
           name: "Hotdog",
           category: "sandwich",
@@ -55,8 +55,8 @@ test("Multiple Object Array", ({same, end}) => {
           name: "Club Sandwich",
           category: "sandwich",
         },
-      ],
-    }
+      ]],
+    ])
   )
 
   end()

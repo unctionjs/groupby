@@ -61,9 +61,8 @@
     "tap": "11.0.0"
   },
   "dependencies": {
-    "@unction/key": "4.12.0",
-    "@unction/first": "2.0.0",
     "@unction/fresh": "6.0.0",
+    "@unction/key": "4.12.0",
     "@unction/mergeright": "5.0.0",
     "@unction/of": "3.0.0",
     "@unction/reducevalues": "7.0.0"

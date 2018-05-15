@@ -3,15 +3,18 @@ import reduceValues from "@unction/reducevalues"
 import fresh from "@unction/fresh"
 import of from "@unction/of"
 import key from "@unction/key"
-import first from "@unction/first"
 
-export default function groupBy (unction: RecordType => KeyType): UnaryFunctionType {
-  return function groupByUnction (list: ListType<RecordType>): RecordType<ListType<RecordType>> {
-    const sampling: RecordType = first(Array.from(list))
+import type {EnumerableType} from "types"
+import type {KeyType} from "types"
+import type {ValueType} from "types"
+import type {UnaryFunctionType} from "types"
+import type {MapType} from "types"
 
+export default function groupBy (unction: EnumerableType<ValueType> => KeyType): UnaryFunctionType<*, *> {
+  return function groupByUnction (list: EnumerableType<ValueType>): MapType<KeyType, EnumerableType<ValueType>> {
     return reduceValues(
-      (accumulated: RecordType<ListType<RecordType>>): UnaryFunctionType =>
-        (value: ValueType): RecordType<ListType<RecordType>> =>
+      (accumulated: MapType<KeyType, EnumerableType<ValueType>>): UnaryFunctionType<*, *> =>
+        (value: ValueType): MapType<KeyType, EnumerableType<ValueType>> =>
           mergeRight(
             accumulated
           )(
@@ -34,7 +37,7 @@ export default function groupBy (unction: RecordType => KeyType): UnaryFunctionT
             )
           )
     )(
-      fresh(sampling)
+      fresh(new Map())
     )(
       list
     )

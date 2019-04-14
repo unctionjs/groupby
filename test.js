@@ -1,8 +1,8 @@
 /* eslint-disable flowtype/require-return-type */
-import {test} from "tap"
-import key from "@unction/key"
+import {test} from "tap";
+import key from "@unction/key";
 
-import groupBy from "./index"
+import groupBy from "./index";
 
 test("Single Object Array", ({same, end}) => {
   same(
@@ -24,10 +24,10 @@ test("Single Object Array", ({same, end}) => {
         },
       ]],
     ])
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test("Multiple Object Array", ({same, end}) => {
   same(
@@ -57,10 +57,10 @@ test("Multiple Object Array", ({same, end}) => {
         },
       ]],
     ])
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 // Tap is broken right now :( https://github.com/tapjs/tsame/issues/1
 // test("Multiple Map Set", ({same, end}) => {

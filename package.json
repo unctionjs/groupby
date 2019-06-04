@@ -65,11 +65,11 @@
     "tap": "12.6.1"
   },
   "dependencies": {
-    "@unction/fresh": "6.0.0",
+    "@unction/fresh": "8.1.0",
     "@unction/key": "4.12.0",
-    "@unction/mergeright": "5.0.0",
-    "@unction/of": "3.0.0",
-    "@unction/reducevalues": "7.0.0"
+    "@unction/mergeright": "7.1.0",
+    "@unction/of": "5.1.0",
+    "@unction/reducevalues": "8.1.0"
   },
   "module": "index.js",
   "browser": "browser.js"

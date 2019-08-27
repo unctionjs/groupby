@@ -1,8 +1,8 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 import get from "@unction/get";
 
-import groupBy from "./index";
+import groupBy from "./";
 
 test("Single Object Array", ({same, end}) => {
   same(

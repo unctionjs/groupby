@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (EnumerableType<ValueType> => KeyType) => (EnumerableType<ValueType>) => MapType<KeyType, EnumerableType<ValueType>>
+> MapperFunctionType<A, B> => ListType<A> => Map<B, ListType<A>>
 
 Creates a record tree where the key is a computation on the value and the value is a list of the values that match with that computation.
 

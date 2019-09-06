@@ -1,7 +1,7 @@
 
 import get from "@unction/get";
 
-import groupBy from "./index.ts";
+import groupBy from "./index";
 
 test("Single Object Array", () => {
   expect(groupBy(

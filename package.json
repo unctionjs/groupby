@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@unction/fresh": "^8.13.0",
-    "@unction/get": "^2.12.0",
+    "@unction/get": "^2.13.0",
     "@unction/mergeright": "^7.13.0",
     "@unction/of": "^5.13.0",
     "@unction/reducevalues": "^8.13.0"
